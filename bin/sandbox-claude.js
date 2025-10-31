@@ -8,8 +8,8 @@ if (process.argv.includes("-h") || process.argv.includes("--help")) {
 Docker Sandbox Claude Cli for Node.js
 
 Usage:
-  npx sandbox-claude [main-path] [extra-mount...] [--env KEY=VALUE] [-e KEY=VALUE]
-  npx sandbox-claude -h
+  sandbox-claude [main-path] [extra-mount...] [--env KEY=VALUE] [-e KEY=VALUE]
+  sandbox-claude -h
 
 Arguments:
   main-path      → /workspace (default: ${defaultDir()})
@@ -18,8 +18,8 @@ Arguments:
   -e KEY=VAL     → shorthand
 
 Examples:
-  npx sandbox-claude ./my-app
-  npx sandbox-claude ./app /data ./backup -e NODE_ENV=production
+  sandbox-claude ./my-app
+  sandbox-claude ./app /data ./backup -e NODE_ENV=production
   `);
   process.exit(0);
 }

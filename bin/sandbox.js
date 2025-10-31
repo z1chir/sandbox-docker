@@ -8,8 +8,8 @@ if (process.argv.includes("-h") || process.argv.includes("--help")) {
 Docker Sandbox for Node.js
 
 Usage:
-  npx sandbox [main-path] [extra-mount...] [--env KEY=VALUE] [-e KEY=VALUE]
-  npx sandbox -h
+  sandbox [main-path] [extra-mount...] [--env KEY=VALUE] [-e KEY=VALUE]
+  sandbox -h
 
 Arguments:
   main-path      → /workspace (default: ${defaultDir()})
@@ -18,8 +18,8 @@ Arguments:
   -e KEY=VAL     → shorthand
 
 Examples:
-  npx sandbox ./my-app
-  npx sandbox ./app /data ./backup -e NODE_ENV=production
+  sandbox ./my-app
+  sandbox ./app /data ./backup -e NODE_ENV=production
   `);
   process.exit(0);
 }
