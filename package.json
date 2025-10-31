@@ -1,0 +1,26 @@
+{
+    "name": "sandbox-docker",
+    "version": "1.0.1",
+    "description": "Secure sandbox using Docker.",
+    "main": "bin/main.js",
+    "bin": {
+        "sandbox": "./bin/sandbox.js",
+        "sandbox-claude": "./bin/sandbox-claude.js"
+    },
+    "files": [
+        "bin/",
+        "lib/"
+    ],
+    "keywords": [
+        "docker",
+        "sandbox",
+        "nodejs",
+        "security",
+        "isolation"
+    ],
+    "author": "sandbox-docker",
+    "license": "MIT",
+    "engines": {
+        "node": ">=18"
+    }
+}
